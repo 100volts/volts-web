@@ -2,7 +2,7 @@ import  BlackgasMeter  from '@/components/black-water-meter'
 import CreateNewGasMeter from "./button/CreateNewGasMeter"
 import AddDataToGasMeter from "./button/AddDataToGas"
 import {gasDataPack,gasDataSum} from "@/components/datastore/GasStore"
-import { useStore } from '@nanostores/react';
+import { useStore } from 'nanostores/react';
 import ElementNav from "./Gas-nav"
 
 export default function DisplayGas(){
