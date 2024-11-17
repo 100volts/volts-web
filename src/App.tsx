@@ -1,21 +1,15 @@
-import { useState } from 'react'
 import { createBrowserRouter, Link, RouterProvider } from "react-router-dom";
 import { Outlet } from "react-router-dom";
 import Navbar from "./main-nav"
 import './App.css'
-import { Button } from './components/ui/button';
+//import { WorkplaceApp } from "./workplace/workapp"
+import UserLogin from "./workplace/UserLogin"
+import HomeScreen from "./home/Home"
 
 const Home = () => (
   <>
     <div>
-      <h1>Home</h1>
-      <a>Home</a>
-      <h1 className="text-3xl font-bold underline">
-      Hello world!
-      <div>
-      <Button>Click me</Button>
-    </div>
-    </h1>
+      <HomeScreen/>
     </div>
   </>
 );
@@ -25,10 +19,11 @@ const Workspace = () => (
     <div>
       <h1>Worlplace</h1>
       <a>Workplase</a>
+      
     </div>
   </>
 );
-
+//<WorkplaceApp/>
 const ProfilePage = () => (
   <>
     <div>
@@ -41,8 +36,7 @@ const ProfilePage = () => (
 const Login = () => (
   <>
     <div>
-      <h1>Login</h1>
-      <a>Login</a>
+      <UserLogin client:only/>
     </div>
   </>
 );
@@ -70,8 +64,6 @@ const router = createBrowserRouter([
 ]);
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
      <RouterProvider router={router} />
   )

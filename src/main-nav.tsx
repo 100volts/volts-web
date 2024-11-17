@@ -2,7 +2,6 @@
 
 import { Link } from 'react-router-dom'
 'use client'
-import { useState } from 'react'
 import ThemeToggle from "./button/ThemeToggle"
 
 export default function TopNav() {  
@@ -17,6 +16,12 @@ export default function TopNav() {
           <div className="flex items-center space-x-4">
             <Link to="/" className="nav-link">
               Home
+            </Link>
+            <Link to="/login" className="nav-link">
+              Login
+            </Link>
+            <Link to="/workspace" className="nav-link">
+                Workspace
             </Link>
             <Link to="https://ivorum.github.io/volts-documentation/" className="nav-link">
               Docs
