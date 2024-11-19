@@ -5,6 +5,9 @@ import './App.css'
 //import { WorkplaceApp } from "./workplace/workapp"
 import UserLogin from "./workplace/UserLogin"
 import HomeScreen from "./home/Home"
+import ReactDOM from "react-dom";
+import store from './store'
+//      
 
 const Home = () => (
   <>
@@ -63,7 +66,7 @@ const router = createBrowserRouter([
   },
 ]);
 
-function App() {
+function App() {   
   return (
      <RouterProvider router={router} />
   )
